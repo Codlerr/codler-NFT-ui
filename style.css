@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    box-sizing: border-box;
+    background: #000000;
+}
+.stars{
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.colors{
+    position: absolute;    
+}
+.colors img{
+    position: relative;
+    top: 0px;
+    
+}
+.line1{
+    position: absolute;
+    margin-top: 60px;
+}
+
+/* section 3 */
+.section-3{
+    background-image: url('images/Rectangle.png');
+    border-radius: 35px;
+
+    background: rgb(213,0,255);
+    background: linear-gradient(90deg, rgba(213,0,255,0.07636558041185226) 52%, rgba(7,0,255,0.08476894175639005) 100%);
+}
+.section-3 .title{
+    width: 530px;
+}
+
+/* section 3*/
+
+/* section 4*/
+.man img{
+    position: absolute;
+    width:800px;
+
+}
+/* section 4*/
+
+/* section 5*/
+
+.Allbtn{
+    background: #BBFF2A;
+}
+.bgcard{
+    background: #161616;
+
+}
+/* section 5*/
+
+/* section 7*/
+.headsec7 img{
+    width: 750px;
+
+}
+.tree{
+    background: #111111;
+    border-radius: 30px;
+}
+.treeimage img{
+    position: absolute;
+    width: 550px;
+    right: 10px;
+}
+/* section 7*/
+
+/* section 8*/
+.carimage{
+    width: 800px;
+}
+/* section 8*/
+
+/* section 9*/
+
+
+.colorhead{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 56px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #FFC158 0%, #DD19AD 23.72%, #5F00FF 50.68%, #145FFF 75.48%, #00C3FF 103.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.dashrot{
+    transform: rotate(3.25deg)
+}
+.leaders img{
+    transform: rotate(-3.1deg)
+}
+.card-color{
+    background: linear-gradient(180deg, #E37576 0%, #C23B7C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+/* section 9*/
+
+/* section 10*/
+/* section 10*/
+
+/* section 11*/
+/* section 11*/
+
+/* border-radius: 16px;
+transform: rotate(-3.1deg); 
+transform: rotate(3.25deg);
+background: linear-gradient(180deg, #E37576 0%, #C23B7C 100%);
+*/
