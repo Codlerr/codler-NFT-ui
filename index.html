@@ -7,39 +7,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+        screens: {
+            'xs':'270px',
+            'sm': '360px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1270px',
+        },
+      extend: {
+          fontFamily: {
+             gilroybold:['gilroybold',"cursive"],
+             gilroylight:["gilroylight","cursive"],
+             gilroysemibold:["gilroysemibold","cursive"],
+             gilroythin:["gilroythin","cursive"],
+             gilroymedium:["gilroymedium","cursive"]
+
+          },
+          colors:{
+            'black-rgba':'rgba(0,0,0,0.54)',
+          },
+         
+      },
+  },
+        }
+      </script>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
     <title>NFT</title>
 </head>
-<body>    
+<body class="">    
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="bg-black h-screen relative">
+<section class=" h-full bg-black bg-[rgba(52,45,113,0.2)] sm:mb-24 sm:mb-0 md:pb-56 relative overflow-hidden">
     <img class="stars" src="images/satrs.png" alt="">
     <img class="line1" src="images/Vector 3.png" alt="">
     <div class="grid grid-cols-2 colors">
         <div><img class="" src="images/Group (1).png"></div>
         <div><img class="pt-40" src="images/Group 84.png"></div>
     </div>
-    <div class="w-10/12 mx-auto">
-        <div class="flex justify-between pt-6">
-            <div>
-                <img src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394283/nft/Layer_2_wxeiuu.png" alt="image" class='w-16 h-9 '/>
+    <div class=" md:mx-24">
+        <div class="grid grid-cols-2  pt-6 ">
+            <div> 
+                <img src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394283/nft/Layer_2_wxeiuu.png" alt="image" class='md:w-16 h-9 sm:mx-5 md:mx-0'/>
             </div>
             <div>
-                <img src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655404087/nft/Vector_11_f2jcpe.png" alt="image" class='w-12 h-8 '>
+                <img src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655404087/nft/Vector_11_f2jcpe.png" alt="image" class='md:w-12 h-8 sm:ml-28 md:ml-[300px] xl:ml-[500px]'>
 
             </div>
         </div>
 
-      
+    <div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 ">
-            <div class="md:mt-40">
-                <img src='https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394281/nft/DXB_NFT_STUDIOS_pmppck.png' alt="image" class='w-40 '/>
-                <p class="text-white text-4xl font-bold mt-5 md:mr-16 leading-normal">Lauching first in the world Celebrity Ads Management system with NFT & METAVERSE </p>
-                <div class="flex mt-10">
+        <div class="grid md:mt-10 sm:pl-5 md:pl-0 sm:grid-cols-1 md:grid-cols-2 ">
+            <div class="md:mt-40  sm:mt-20">
+                <img src='https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394281/nft/DXB_NFT_STUDIOS_pmppck.png' alt="image" class='w-40 sm:ml-20 md:ml-0'/>
+                <p class="text-white lg:text-4xl sm:w-80 md:w-full  font-bold mt-5 sm:text-center md:text-left leading-normal">Lauching first in the world<br/> Celebrity Ads Management <br/> with NFT & METAVERSE </p>
+                <div class="md:flex  mt-10 hidden md:block">
                     <a href="#" class=""><img class="h-14" src="images/Group 66.png"></a>
                     <div class="ml-10 mt-6">
                         <h3 class="text-white">Get Start</h3>
@@ -47,74 +74,83 @@
                     <img class="h-4 ml-2 mt-7" src="images/Group 56.png">
                 </div>
             </div>
-            <div class="md:mt-24 relative">
-                <img class="w-72 absolute left-52" src="images/Group 76.png">
-                <img class="w-full  absolute -bottom-72 left-20" src="images/Group.png">
-                <img class="w-full absolute -bottom-28" src="images/Group 77.png">
-                <img class="w-96 absolute bottom-0 left-10" src="images/medium-shot-woman-wearing-vr-glasses 1.png">
-                <img class="w-28 absolute bottom-0 right-44" src="images/Ellipse 13.png">
-                <img class="w-28 absolute bottom-0 right-36" src="images/Group (2).png">
-                <img class="w-96 absolute -bottom-20 right-36" src="images/Group 83.png">
-                <img class="w-24 absolute -bottom-20 right-0" src="images/Group 2024.png">
+            <div class="md:mt-24 sm:ml-24 md:ml-0 sm:mt-24 relative">
+                <img class="lg:w-64 sm:w-36 absolute md:left-20 lg:left-52" src="images/Group 76.png">
+                <img class="md:w-96 sm:w-56 absolute sm:-bottom-56 md:-bottom-12 sm:left-3 md:left-12 lg:left-56" src="images/Group.png">
+                <img class="xl:w-full sm:w-96 absolute sm:-bottom-48 sm:-ml-12 md:-ml-2 xl:ml-0 md:-bottom-9" src="images/Group 77.png">
+                <img class="md:w-96 sm:w-56 sm:-ml-12 sm:mt-5 md:mt-0 absolute md:bottom-12 lg:left-16" src="images/medium-shot-woman-wearing-vr-glasses 1.png">
+                <img class="md:w-24 sm:w-10 absolute z-200 sm:-bottom-36 md:bottom-12 sm:right-32 lg:right-44" src="images/Ellipse 13.png">
+                <img class="md:w-24 sm:w-10 absolute  sm:-bottom-36 md:bottom-12 sm:right-32 lg:right-36" src="images/Group (2).png">
+                <img class="lg:w-80 md:w-56 sm:w-48 absolute sm:-bottom-48 md:-bottom-0 lg:-bottom-5 sm:right-24 md:right-10 xl:right-36" src="images/Group 83.png">
+                <img class="md:w-20 sm:w-10 absolute -bottom-20 md:-bottom-5 md:-right-10 xl:right-0" src="images/Group 2024.png">
             </div>
         </div>
     </div>
-    <img class="absolute -bottom-2" src="images/Vector 4.png" alt="">
+    <div class="flex w-full md:hidden sm:mx-20 sm:mt-64 sm:pb-10 md:pb-0">
+        <a href="#" class="sm:w-32 sm:h-3"><img class="h-14" src="images/Group 66.png"></a>
+        <div class="sm:ml-5 md:ml-10 mt-6">
+            <h3 class="text-white">Get Start</h3>
+        </div>
+        <img class="h-4 ml-2 mt-7" src="images/Group 56.png">
+    </div>
+    <img class="absolute sm:w-36 md:w-full mt-24 sm:-ml-20 lg:ml-0" src="images/Vector 4.png" alt="">
 </section>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 2 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="bg-black h-fit mb-32 w-10/12 mx-auto">
-    <div class="flex justify-center mt-10">
-        <img class="w-80" src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655404087/nft/What_NFT_studios_do_abcstb.png">
+
+<section class="bg-black bg-[rgba(52,45,113,0.2)] pb-32 mx-auto">
+    <div class="flex sm:ml-24 sm:pt-12 md:pt-0 md:ml-0 md:justify-center pt-10">
+        <img class="md:w-80 sm:w-56" src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655404087/nft/What_NFT_studios_do_abcstb.png">
     </div>
 
-    <div class="grid grid-cols-4 mt-20">
+    <div class="grid sm:grid-cols-1 sm:px-16 md:px-10 lg:px-24 md:grid-cols-4 md:mt-20">
         <div class="">
             <img class="w-64" src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394282/nft/28_1_fyz8rw.png">
             <div class="md:-ml-16">
-                <p class="text-white text-lg text-center font-semibold">Celebrity & Influencers</p>
-                <p class="text-white text-lg text-center font-semibold">NFT Pages</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">Celebrity & Influencers</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">NFT Pages</p>
             </div>
         </div>
         <div class="">
             <img  class="w-64"src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394282/nft/13_1_diwqej.png">
             <div class="md:-ml-16">
-                <p class="text-white text-lg text-center font-semibold">Celebrity & Influencers</p>
-                <p class="text-white text-lg text-center font-semibold">NFT Pages</p>
+                <p class="text-white lg:text-lg text-center font-semibold">Celebrity & Influencers</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">NFT Pages</p>
             </div>
         </div>
         <div class="">
             <img class="w-64" src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394282/nft/6_51_le8bly.png">
             <div class="md:-ml-16">
-                <p class="text-white text-lg text-center font-semibold">Celebrity & Influencers</p>
-                <p class="text-white text-lg text-center font-semibold">NFT Pages</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">Celebrity & Influencers</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">NFT Pages</p>
             </div>
         </div>
         <div class="">
             <img class="w-64" src="https://res.cloudinary.com/dbwyrrrqo/image/upload/v1655394282/nft/5_1_vdtbuo.png">
             <div class="md:-ml-16">
-                <p class="text-white text-lg text-center font-semibold">Celebrity & Influencers</p>
-                <p class="text-white text-lg text-center font-semibold">NFT Pages</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">Celebrity & Influencers</p>
+                <p class="text-white lg:text-lg  text-center font-semibold">NFT Pages</p>
             </div>
             </div>
     </div>
 </section>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 2 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="w-10/12 mx-auto h-screen section-3 relative">
-    <img class="absolute w-full pt-40 bg-cover" src="images/Ellipse 9.png">
-    <img class="absolute left-10 -top-8" src="images/Ellipse 12.png">
-    <img class="absolute -right-24 top-96 w-36" src="images/Vector.png">
-
-    <div class="grid grid-cols-1 md:grid-cols-2 md:pl-10 md:pr-24 py-20">
-        <div class="p-16">
-            <img class="w-32 md:w-96" src="images/Group 2046.png">
+<section class="z-200 mx-auto md:mx-10 xl:mx-16 md:my-12 rounded-3xl section-3 sm:p-5 md:p-0 relative ">
+    <img class="absolute  hidden w-full pt-40 bg-cover" src="images/Ellipse 9.png">
+    <img class="absolute hidden md:block left-10 -top-8" src="images/Ellipse 12.png">
+    <img class="absolute sm:top-[600px]  md:block sm:right-2 hidden md:-right-7 md:top-96 sm:w-10 md:w-24" src="images/Vector.png">
+    <img class=" md:hidden  sm:mt-5 md:mt-0 md:ml-8 sm:ml-12 w-64" src="images/Group 2036.png" alt="">
+    <p class="text-white md:hidden font-gilroythin text-xs sm:ml-16 md:ml-9 md:text-2xl mt-4 mb-10">Type Phrase 1  ( Page Of Collections)</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 md:pl-10 md:pr-10 md:py-20">
+        <div class="sm:px-12 md:px-0 md:p-16">
+            <img class="w-64 md:w-96" src="images/Group 2046.png">
         </div>
         <div class="mt-10">
-            <img class="title" src="images/Group 2036.png" alt="">
-            <p class="text-white text-2xl mt-4 mb-10">Type Phrase 1  ( Page Of Collections)</p>
+            <img class="title sm:hidden md:block" src="images/Group 2036.png" alt="">
+            <p class="text-white sm:hidden md:block text-2xl mt-4 mb-10">Type Phrase 1  ( Page Of Collections)</p>
             <p class="text-zinc-500">We will provide our proposal for sharing structure , smart contract ( for auto receiving payments ), NFT Advertising contract )</p>
             <img class="my-5" src="images/Line 6.png">
             <p class="text-zinc-500">We provide hardware vallet for influencers with ready to go wallet to receive payments</p>
@@ -134,9 +170,12 @@
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="pt-28 pb-32 relative">
+<section class="md:pt-28 pb-32  relative overflow-hidden">
     <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-7">
-        <div class="col-span-3">
+        <div class="md:hidden sm:mt-5 md:mt-0 col-span-4 man">
+            <img class="" src="images/Group 2055.png">
+        </div>
+        <div class="col-span-3 sm:mt-80 md:mt-0">
             <p class="text-white text-2xl mt-4 mb-10">Type 2 Phrase ( Meta Studios)</p>
             <p class="text-zinc-500">We will provide our proposal for sharing structure , smart contract ( for auto receiving payments ), NFT Advertising contract</p>
             <img class="my-7" src="images/Line 6.png">
@@ -151,34 +190,36 @@
 
             
         </div>
-        <div class="col-span-4 man">
+        <div class="sm:hidden md:block col-span-4 man md:-ml-12 md:mt-24 lg:mt-0 lg:ml-0">
             <img class="-mt-32" src="images/Group 2055.png">
         </div>
     </div>
     <img class="absolute left-0 top-56" src="images/Ellipse 24.png">
 </section>
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 5 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="relative">
-    <div class="w-10/12 mx-auto">
-        <p class="text-white text-xl font-semibold tracking-wide">NFT Marketplace</p>
 
-        <div class="flex justify-between mt-4">
+<section class="relative overflow-hidden">
+    <div class="md:w-10/12 mx-auto">
+        <p class="text-white text-xl md:mt-16 sm:mx-28 md:mx-0 md:mx-0 font-semibold tracking-wide">NFT Marketplace</p>
+
+        <div class="md:flex justify-between mt-4">
             <div>
-                <img class="w-64" src="images/Rare Collections.png">
+                <img class="w-64 sm:ml-20 md:ml-0" src="images/Rare Collections.png">
             </div>
-            <div class="flex">
-                <a href="#" class="Allbtn py-3 px-5 rounded-md">All</a>
-                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 py-2 px-3 rounded-md">3d genarated</a>
-                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 py-2 px-3 rounded-md">Photography</a>
-                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 py-2 px-3 rounded-md">painting</a>
+            <div class="flex  sm:mt-12 md:mt-0 md:ml-24 sm:w-full sm:overflow-hidden">
+                <a href="#" class="Allbtn py-3 md:px-5 sm:px-10 rounded-md">All</a>
+                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 sm:py-1 md:py-2 px-3 rounded-md">3d genarated</a>
+                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 sm:py-1 md:py-2 px-3 rounded-md">Photography</a>
+                <a href="#" class="text-white border-dashed border-2 ml-2 border-zinc-400 sm:py-1 md:py-2 md:px-3 rounded-md">painting</a>
                 <a href="#" class="ml-2"><img src="images/Group 2104.png"></a>
             </div>
         </div>
 
         <!-- image grid -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 grid-rows-1 mt-20">
+      <div class="grid grid-cols-1 sm:px-12 md:px-0 md:grid-cols-4 gap-8 grid-rows-1 mt-20">
             <div class="bgcard p-4 rounded-lg"><img src="images/Rectangle 338.png"><p class="text-white font-semibold pt-4">3D_Anime_2</p></div>
             <div class="bgcard p-4 rounded-lg"><img src="images/Rectangle 338 (1).png"><p class="text-white font-semibold pt-4">3D_realistic_1</p></div>
             <div class="bgcard p-4 rounded-lg"><img src="images/Rectangle 338 (2).png"><p class="text-white font-semibold pt-4">3D_cute_2</p></div>
@@ -190,49 +231,60 @@
         </div>
 
     </div>
-</section>
+</section>-->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 5 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 6 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section>
-    <div class="w-10/12 mx-auto mt-40 relative">
+
+<section class="overflow-hidden">
+    <div class="w-10/12 mx-auto sm:mt-10 md:mt-40 relative">
         <img class="absolute" src="images/Ellipse 14.png">
         <div class="grid grid-cols-1 md:grid-cols-5">
-            <div class="col-span-2 md:mt-32">
-                <img class="w-80" src="images/How Celebrity work with NFT Studios _.png">
-                <p class="text-white font-semibold text-xl mt-6">Type 1 phase</p>
+            <div class="col-span-2 md:mt-20">
+                <p class="text-white  text-xl md:hidden">Type 1 phase</p>
+                <img class="w-56 md:w-80 sm:mt-5 md:mt-0" src="images/How Celebrity work with NFT Studios _.png">
+                <p class="text-white font-semibold text-xl hidden md:block mt-6">Type 1 phase</p>
             </div>
-            <div class="col-span-3 flex ">
-                <img class="w-64 ml-10" src="images/Group 2058.png">
-                <img class="w-64 ml-24" src="images/Group 2057.png">
+            <div class=" md:col-span-3 flex sm:mt-16 md:mt-0">
+                <img class="sm:w-36 md:w-48 xl:w-64 md:ml-10" src="images/Group 2058.png">
+                <img class="sm:w-36 md:w-48 xl:w-64 sm:ml-8 md:ml-10" src="images/Group 2057.png">
             </div>
 
         </div>
     </div>
-    <img class="absolute -z-20" src="images/satrs12.png">
+    <img class="absolute  -z-20" src="images/satrs12.png">
 </section>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 6 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section>
+
+<section class="">
     <div class="relative">
-        <img class="w-40 absolute left-0" src="images/Group 2155.png">
-        <img class="w-40 absolute right-0 top-64" src="images/Group 2156.png">
-        <div class="headsec7 flex justify-center">
-            <img class="mt-36" src="images/How Much Celebrity will earn with NFT Studios _.png">
+        <img class="lg:w-40 sm:w-12 absolute left-0" src="images/Group 2155.png">
+        <img class="lg:w-40 sm:w-12  absolute right-0 md:-ml-12 sm:-ml-28 xl:ml-0 top-64" src="images/Group 2156.png">
+        <div class=" hidden md:block flex justify-center">
+            <img class="mt-36  xl:ml-96 md:ml-20 md:w-[600px] " src="images/How Much Celebrity will earn with NFT Studios _.png">
         </div>
-        <div class="text-center">
-            <p class="text-white font-semibold my-8 text-2xl tracking-wider">1. Depends on followers and how we plan<br> starts from 3k to 5 million usd</p>
-            <p class="text-zinc-500 text-sm">DXB NFT STUDIOS OFFERS TO BUY Real Luxury Properties,<br> Watches & Cars with NFT</p>
+        <div class=" md:hidden flex justify-center">
+            <img class="mt-36 sm:w-56  md:w-full" src="images/How Much Celebrity will earn with NFT Studios _.png">
+        </div>
+        <div class="text-center sm:mx-16 md:mx-0">
+            <p class="text-white sm:hidden md:block font-semibold my-8 sm:text-xs md:text-2xl tracking-wider">1. Depends on followers and how we plan<br> starts from 3k to 5 million usd</p>
+            <p class="text-white md:hidden font-semibold my-8 sm:text-xs md:text-2xl tracking-wider">1. Depends on followers and how we plan starts from 3k to 5 million usd</p>
+            <p class="text-zinc-500 md:hidden text-sm">DXB NFT STUDIOS OFFERS TO BUY Real Luxury Properties,Watches & Cars with NFT</p>
+            <p class="text-zinc-500 hidden md:block text-sm">DXB NFT STUDIOS OFFERS TO BUY Real Luxury Properties,<br> Watches & Cars with NFT</p>
         </div>
     </div>
 
     <div class="w-10/12 mx-auto relative">
-        <div class="grid grid-cols-1 md:grid-cols-3 tree mt-48 md:px-24">
-            <div class="col-span-2 pt-28 pb-32 md:mr-6">
-                <p class="text-white text-3xl font-semibold  leading-10 mr-20 ">DXB NFT STUDIOS OFFERS TO BUY Real<br> Luxury Properties, Watches & Cars with NFT</p>
-                <img class="py-8 w-40" src="images/Advantages.png"> 
+        <div class="grid grid-cols-1 md:grid-cols-3 tree mt-48 px-5 md:px-24">
+            <div class="col-span-2 sm:pt-10 sm:mb-10 md:pt-28 md:pb-32 md:mr-6">
+                <p class="text-white sm:text-md xl:text-3xl font-semibold  md:leading-10 md:mr-20 ">DXB NFT STUDIOS OFFERS TO BUY Real Luxury Properties, Watches & Cars with NFT</p>
+                <div class=" md:hidden ">
+                    <img class="sm:h-56 w-48" src="images/7 1.png">
+                </div>
+                <img class="py-8 sm:mt-0 md:mt-0 sm:w-28 md:w-40" src="images/Advantages.png"> 
                 <p class="text-zinc-500 text-base">DXB NFT STUDIOS OFFERS TO BUY Real Luxury Properties, Watches & Cars with NFT</p>
                 <img class="py-4 md:pr-20" src="images/Line 12.png">
                 <p class="text-zinc-500 text-base">You will own assets share holding via NFT</p>
@@ -241,7 +293,7 @@
                 
 
             </div>
-            <div class="treeimage ">
+            <div class="treeimage mt-28 md:w-[400px] xl:w-[500px] -ml-20 md:block sm:hidden">
                 <img class="" src="images/7 1.png">
             </div>
         </div>
@@ -250,41 +302,49 @@
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 7 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="w-10/12 mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 pr-10">
-        <div class="relative carimage">
-            <img class="absolute -left-20" src="images/Group 2119.png">
+
+<section class="lg:w-10/12 sm:-mt-36 md:mt-0 md:mx-auto overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:pr-10">
+        <div class=" hidden md:block xl:hidden">
+            <img class="w-[700px] h-[700px]" src="images/Group 2119.png">
         </div>
-        <div class="mt-32">
-            <p class="text-white text-3xl tracking-wider font-semibold pr-20 pb-10">How NFT Studios works for Property, Watches & Cars?</p>
-            <p class="text-zinc-500 text-base leading-8">We will provide our proposal for sharing structure , smart contract ( for auto receiving payments ), NFT Advertising contract )</p>
+        <div class="relative carimage hidden xl:block">
+            <img class="absolute -left-24" src="images/Group 2119.png">
+        </div>
+        <div class="carimage md:hidden px-5">
+            <img class=" -ml-48" src="images/Group 2119.png">
+        </div>
+        <div class="sm:mt-5 md:mt-32 sm:px-10 md:px-0">
+            <p class="text-white xl:text-3xl md:tracking-wider font-semibold pr-20 pb-10">How NFT Studios works for Property, Watches & Cars?</p>
+            <p class="text-zinc-500 text-base md:leading-8">We will provide our proposal for sharing structure , smart contract ( for auto receiving payments ), NFT Advertising contract )</p>
             <img class="my-6" src="images/Line 6.png">
-            <p class="text-zinc-500 text-base leading-8">We provide hardware vallet for influencers with ready to go wallet to receive payments </p>
+            <p class="text-zinc-500 text-base md:leading-8">We provide hardware vallet for influencers with ready to go wallet to receive payments </p>
             <img class="my-6" src="images/Line 6.png">
-            <p class="text-zinc-500 text-base leading-8">We provide  celebrities for running NFT ads </p>
+            <p class="text-zinc-500 text-base md:leading-8">We provide  celebrities for running NFT ads </p>
             <img class="my-6" src="images/Line 6.png">
-            <p class="text-zinc-500 text-base leading-8">We Provide Safe and Secure System For burning share holder NFT and auto receiving payments to them once property , watch or cars and sold using our mega NFT system </p>
+            <p class="text-zinc-500 text-base md:leading-8">We Provide Safe and Secure System For burning share holder NFT and auto receiving payments to them once property , watch or cars and sold using our mega NFT system </p>
         </div>
     </div>
 </section>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 8 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class=" relative">
+
+<section class=" relative  overflow-hidden">
     <div class="w-10/12 mx-auto">
-        <div class="mt-32 mb-20 flex justify-center align-middle">
+        <div class="sm:mt-10 md:mt-32 mb-20 flex sm:text-md font-semibold justify-center align-middle">
             <p class="colorhead">Dxb nft studios team leaders?</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 leaders">
+        <div class="grid grid-cols-1  sm:px-12 md:px-0 md:grid-cols-4 gap-6 leaders">
             <div class="bgcard p-7  rounded-xl">
                 <p class="dashrot border-dashed border-2 rounded-xl border-zinc-700"><img class="" src="images/Rectangle 331.png"></p>
-                <div class="flex justify-between mt-6">
+                <div class="flex justify-between md:p-0  mt-6">
                     <div>
                         <p class="text-white font-semibold">Rajesh Philip</p>
-                        <p class="card-color text-[14px]">Bussiness Development Head</p>
+                        <p class="card-color lg:text-[14px]">Bussiness Development Head</p>
                     </div>
-                    <div>
-                        <img class="w-10 cursor-pointer" src="images/Group 2075.png">
+                    <div class="'sm:w-36 md:w-full">
+                        <img class="md:w-10 cursor-pointer" src="images/Group 2075.png">
                     </div>
                 </div>
             </div>
@@ -293,10 +353,10 @@
                 <div class="flex justify-between mt-6">
                     <div>
                         <p class="text-white font-semibold">Julien Hongnen</p>
-                        <p class="card-color text-[14px]">Design & Security</p>
+                        <p class="card-color lg:text-[14px]">Design & Security</p>
                     </div>
                     <div>
-                        <img class="w-10 cursor-pointer" src="images/Group 2075.png">
+                        <img class="md:w-10 cursor-pointer" src="images/Group 2075.png">
                     </div>
                 </div>
             </div>
@@ -305,10 +365,10 @@
                 <div class="flex justify-between mt-6">
                     <div>
                         <p class="text-white font-semibold">Finny John Prince</p>
-                        <p class="card-color text-[14px]">Technical Head</p>
+                        <p class="card-color lg:text-[14px]">Technical Head</p>
                     </div>
                     <div>
-                        <img class="w-10 cursor-pointer" src="images/Group 2075.png">
+                        <img class="md:w-10 cursor-pointer" src="images/Group 2075.png">
                     </div>
                 </div>
             </div>
@@ -317,10 +377,10 @@
                 <div class="flex justify-between mt-6">
                     <div>
                         <p class="text-white font-semibold">Pratheesh VK</p>
-                        <p class="card-color text-[14px]">Operational Head</p>
+                        <p class="card-color lg:text-[14px]">Operational Head</p>
                     </div>
                     <div>
-                        <img class="w-10 cursor-pointer" src="images/Group 2075.png">
+                        <img class="md:w-10 cursor-pointer" src="images/Group 2075.png">
                     </div>
                 </div>
             </div>
@@ -333,32 +393,37 @@
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 9 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 10 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="relative">
+
+<section class="relative  overflow-hidden">
     <img class="absolute md:-mt-20 -z-20" src="images/satrs22.png">
     <div class="flex justify-center mt-6">
         <img class="w-16" src="images/VR Glasses 1.png">
         
     </div>    
-    <div class="w-10/12 mx-auto grid grid-cols-4 mt-10 ">
-        <div class="md:pl-64 md:pt-10 col-span-1">
-            <img class="w-24" src="images/360 Panorama 1.png">
+    <div class="w-10/12 mx-auto grid grid-cols-1 sm:text-center md:text-left md:grid-cols-4 mt-10 ">
+        <div class=" hidden md:block md:pt-8 col-span-1">
+            <img class="w-20 md:ml-12 lg:ml-28" src="images/360 Panorama 1.png">
         </div>
-        <div class="col-span-2">
-            <p class="text-white text-center text-3xl font-semibold">DXB NFT STUDIOS<br>A Short Summary ?</p>
+        <div class="md:col-span-2">
+            <p class="text-white text-center hidden md:block sm:text-sm lg:text-3xl font-semibold">DXB NFT STUDIOS<br>A Short Summary ?</p>
+            <p class="text-white text-center md:hidden sm:text-sm md:text-3xl font-semibold">DXB NFT STUDIOS A Short Summary ?</p>
             <p class="text-zinc-400 tracking-wide text-xl text-center pt-6">it's a start up company launching in Dubai from 4 successful entrepreneurs. We bringing you new concepts in NFT field</p>
             
         </div>
-        <div class="col-span-1">
+        <div class="hidden md:block col-span-1">
+            <img class="w-24" src="images/AR Touch 1.png">
+        </div>
+        <div class="md:hidden sm:ml-32 sm:mt-5 col-span-1">
             <img class="w-20" src="images/AR Touch 1.png">
         </div>
-
     </div>
     <img class="pt-28" src="images/Vector 41.png">
 </section>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 10 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 11 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<section class="w-10/12 mx-auto">
+
+<section class="w-10/12  mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-20 mb-16">
         <div class="">
             <p class="text-white font-semibold text-sm">Quick links</p>
@@ -381,12 +446,12 @@
             <a href="#"><p class="text-zinc-600 text-sm py-2 hover:text-zinc-300 transition-all duration-500">hello@dxbnftstudios.com</p></a>
   
         </div>
-        <div class="col-span-2 md:ml-56 relative">
+        <div class="col-span-2 md:ml-16 md:pr-5 relative">
             <p class="text-white font-semibold text-sm">Signup for newsletters</p>
             <a href="#"><p class="text-zinc-300 text-sm py-4">Email</p></a>
             <div class="flex">
                 <input type="text" class="outline-none bg-transparent border-b-2 pb-3 border-zinc-600 w-64 text-white" placeholder="Samplemail@hotmail.com">
-                <a href="#"><img class="absolute right-4" src="images/Group 46.png"></a>
+                <a href="#"><img class="absolute sm:-ml-16 md:ml-0" src="images/Group 46.png"></a>
             </div>
         </div>
     </div>
@@ -394,6 +459,7 @@
 </section>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 11 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 12 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--
 <section class="w-10/12 mx-auto">
     <div class="flex">
         <div class="">
@@ -403,9 +469,8 @@
          <p class="text-zinc-500 font-semibold text-xs py-6 pl-4">2021 Dbxdubaiallrights reserved</p>
         </div>
      </div>
-</section>
+</section>-->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECTION 12 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
 
 </body>
 </html>

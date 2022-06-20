@@ -1,7 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face{
+    src: url(assets/fonts/Gilroy-ExtraBold.ttf);
+    font-family: "gilroybold";
+}
+@font-face{
+    src:url(assets/fonts/Gilroy-UltraLight.ttf);
+    font-family: "gilroythin";
+}
+@font-face {
+    font-family: "gilroylight";
+    src: url(assets/fonts/Gilroy-Light.ttf);
+}
+@font-face {
+    font-family: "gilroymedium";
+    src: url(assets/fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: "gilroysemibold";
+    src: url(assets/fonts/Gilroy-SemiBold.ttf);
+}
 body{
     box-sizing: border-box;
     background: #000000;
@@ -68,9 +87,7 @@ body{
     border-radius: 30px;
 }
 .treeimage img{
-    position: absolute;
     width: 550px;
-    right: 10px;
 }
 /* section 7*/
 
@@ -84,10 +101,6 @@ body{
 
 
 .colorhead{
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 56px;
-    letter-spacing: 0.03em;
     background: linear-gradient(90deg, #FFC158 0%, #DD19AD 23.72%, #5F00FF 50.68%, #145FFF 75.48%, #00C3FF 103.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -107,6 +120,7 @@ body{
     background-clip: text;
     text-fill-color: transparent;
 }
+
 /* section 9*/
 
 /* section 10*/
