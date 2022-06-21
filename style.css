@@ -120,6 +120,9 @@ body{
     background-clip: text;
     text-fill-color: transparent;
 }
+.stylebg{
+    background-image: url('images/Ellipse 11.png');
+}
 
 /* section 9*/
 
