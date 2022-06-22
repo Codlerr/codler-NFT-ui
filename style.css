@@ -63,11 +63,25 @@ body{
 /* section 3*/
 
 /* section 4*/
-.man img{
+/* .man img{
     position: absolute;
     width:800px;
 
-}
+} */
+@media (min-width:800px) {
+    .man img{
+        position: absolute;
+        width:500px;
+        
+    }
+  }
+@media (min-width:1000px) {
+    .man img{
+        position: absolute;
+        width:800px;
+        
+    }
+  }
 /* section 4*/
 
 /* section 5*/
