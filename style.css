@@ -144,9 +144,9 @@ body{
 .dashrot{
     transform: rotate(3.25deg)
 }
-.leaders img{
+/* .leaders img{
     transform: rotate(-3.1deg)
-}
+} */
 .card-color{
     background: linear-gradient(180deg, #E37576 0%, #C23B7C 100%);
     -webkit-background-clip: text;
