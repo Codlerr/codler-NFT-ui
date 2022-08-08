@@ -145,6 +145,14 @@ body{
     background-clip: text;
     text-fill-color: transparent;
 }
+.colorhead1{
+    background: linear-gradient(90deg, #FFC158 0%, #DD19AD 23.72%, #5F00FF 50.68%, #145FFF 75.48%, #00C3FF 103.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    width: fit-content;
+}
 .dashrot{
     transform: rotate(3.25deg)
 }
